@@ -1,0 +1,5 @@
+﻿connectionReferences:
+  - connectionReferenceLogicalName: cr681_EnterpriseDataEngineeringAgent.shared_fabriciqmcpserver.26f29344a9eb469b82480c62552ad0f5
+    connectorId: /providers/Microsoft.PowerApps/apis/shared_fabriciqmcpserver
+  - connectionReferenceLogicalName: cr681_EnterpriseDataEngineeringAgent.shared_new-5ffabric-20mcp-5ff3efba2e07a7a8b4.a3af2cef-495b-4df2-8aa4-344cb1caa351
+    connectorId: /providers/Microsoft.PowerApps/apis/shared_new-5ffabric-20mcp-5ff3efba2e07a7a8b4

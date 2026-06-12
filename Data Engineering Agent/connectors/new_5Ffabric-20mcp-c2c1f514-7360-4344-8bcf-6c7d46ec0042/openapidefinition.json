@@ -1,0 +1,59 @@
+﻿{
+  "swagger": "2.0",
+  "info": {
+    "title": "Fabric MCP",
+    "description": "The data engineering agent will use the mcp server to deploy code into Fabri environment",
+    "version": "1.0.0"
+  },
+  "host": "api.fabric.microsoft.com",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/v1/mcp/core": {
+      "post": {
+        "responses": {
+          "200": {
+            "description": "Immediate Response"
+          }
+        },
+        "x-ms-agentic-protocol": "mcp-streamable-1.0",
+        "operationId": "InvokeServer",
+        "summary": "Fabric MCP",
+        "description": "The data engineering agent will use the mcp server to deploy code into Fabri environment"
+      }
+    }
+  },
+  "securityDefinitions": {
+    "oauth2-auth": {
+      "type": "oauth2",
+      "flow": "accessCode",
+      "tokenUrl": "https://login.windows.net/common/oauth2/authorize",
+      "scopes": {
+        "https://api.fabric.microsoft.com/.default": "https://api.fabric.microsoft.com/.default"
+      },
+      "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/authorize"
+    },
+    "oAuthClientCredentials": {
+      "type": "oauth2",
+      "flow": "application",
+      "tokenUrl": "https://login.windows.net/common/oauth2/authorize",
+      "scopes": {
+        "https://api.fabric.microsoft.com/.default": "https://api.fabric.microsoft.com/.default"
+      }
+    }
+  },
+  "security": [
+    {
+      "oauth2-auth": [
+        "https://api.fabric.microsoft.com/.default"
+      ]
+    },
+    {
+      "oAuthClientCredentials": [
+        "https://api.fabric.microsoft.com/.default"
+      ]
+    }
+  ]
+}

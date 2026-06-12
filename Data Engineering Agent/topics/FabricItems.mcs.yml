@@ -1,0 +1,37 @@
+mcs.metadata:
+  componentName: Fabric Items for medallion architecture
+kind: AdaptiveDialog
+modelDescription: "This tool can handle queries like these: provide me with the Fabric items required for the Medallion architecture, provide me with the Fabric items required for the metadata ingestion framework, what are the Fabric items for Medallion architecture, what are the Fabric items for metadata ingestion framework"
+beginDialog:
+  kind: OnRecognizedIntent
+  id: main
+  intent:
+    triggerQueries:
+      - fabric naming conventions
+      - how should I name fabrics
+      - fabric name rules
+      - enforce fabric naming standards
+      - check fabric name compliance
+      - what are the fabric naming guidelines
+      - validate my fabric name
+      - fabric naming enforcer tool
+      - help with fabric names
+
+  actions:
+    - kind: SearchAndSummarizeContent
+      id: zGvqkh
+      userInput: "You are a Microsoft Fabric Data Engineering expert.  When the user asks about the required Fabric items for a Medallion Architecture, answer ONLY using information from the attached knowledge sources.  Identify the requested layer(s) (Bronze, Silver, Gold) and provide:  1. Required Microsoft Fabric items. 2. Purpose of each item. 3. How the items are connected within the architecture. 4. Recommended implementation approach.  Format the response as a table with the following columns: - Layer - Fabric Item - Purpose - Notes  If the knowledge source does not contain the requested information, state: \"I could not find this information in the available knowledge sources.\"  Do not invent Fabric items or make assumptions that are not supported by the knowledge source."
+      additionalInstructions:
+      fileSearchDataSource:
+        searchFilesMode:
+          kind: SearchSpecificFiles
+          files:
+            - cr681_EnterpriseDataEngineeringAgent.file.DataEngineeringKnowledge-FabricItems-MedallionArchitec_S-r
+
+      knowledgeSources:
+        kind: SearchSpecificKnowledgeSources
+
+      applyModelKnowledgeSetting: false
+
+inputType: {}
+outputType: {}

@@ -1,0 +1,15 @@
+mcs.metadata:
+  componentName: Metadata Framework
+kind: AgentDialog
+response:
+  activity: The scripts was created using **Metadata Framework Agent**  ✅
+  mode: Strict
+
+beginDialog:
+  kind: OnToolSelected
+  id: main
+  description: This agent is using the metadata framework to build the ETL scripts and ingestion process
+
+settings: {}
+inputType: {}
+outputType: {}
