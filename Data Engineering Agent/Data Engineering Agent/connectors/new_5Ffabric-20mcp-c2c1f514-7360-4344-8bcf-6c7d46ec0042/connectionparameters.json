@@ -1,0 +1,40 @@
+﻿{
+  "token": {
+    "type": "oauthSetting",
+    "oAuthSettings": {
+      "identityProvider": "oauth2pkce",
+      "clientId": "8bebad95-92c8-40c1-b8b1-706e4293d664",
+      "scopes": [
+        "https://api.fabric.microsoft.com/.default"
+      ],
+      "redirectMode": "GlobalPerConnector",
+      "redirectUrl": "https://global.consent.azure-apim.net/redirect/new-5ffabric-20mcp-5ff3efba2e07a7a8b4",
+      "properties": {
+        "IsFirstParty": "False",
+        "IsOnbehalfofLoginSupported": false
+      },
+      "customParameters": {
+        "grantType": {
+          "value": "code"
+        },
+        "AuthorizationUrl": {
+          "value": "https://login.microsoftonline.com"
+        },
+        "RefreshUrl": {
+          "value": "https://login.microsoftonline.com/organizations/oauth2/v2.0/token"
+        },
+        "TokenUrl": {
+          "value": "https://login.microsoftonline.com/organizations/oauth2/v2.0/token"
+        }
+      }
+    },
+    "uiDefinition": {
+      "displayName": "OAuth Connection",
+      "description": "OAuth Connection",
+      "constraints": {
+        "required": "true",
+        "hidden": false
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+mcs.metadata:
+  componentName: Fabric Architecture Reviewer
+kind: AdaptiveDialog
+beginDialog:
+  kind: OnRecognizedIntent
+  id: main
+  intent:
+    displayName:
+    triggerQueries:
+      - review my fabric architecture
+      - fabric architecture feedback
+      - can you check my fabric design
+      - evaluate this fabric architecture
+      - fabric solution review
+      - is my fabric setup correct
+      - architecture assessment for fabric
+      - analyze my fabric topology
+      - fabric network reviewer
+      - help with reviewing a fabric architecture
+
+  actions:
+    - kind: Question
+      id: Question_KuxNKs
+      variable: Topic.FabricSolutionDescription
+      prompt: Please describe the proposed Fabric solution.
+      entity: StringPrebuiltEntity
+
+    - kind: SearchAndSummarizeContent
+      id: TqB2Ru
+      userInput: "You are a Microsoft Fabric Architecture Reviewer.  Your job is to evaluate the proposed architecture using ONLY the organization’s uploaded Fabric architecture and governance documents.  Architecture Description: {FabricSolutionDescription}    Evaluate the design against the following criteria:  1. Medallion architecture correctness (if applicable) 2. Separation of concerns (Bronze, Silver, Gold layers) 3. Proper use of Fabric components (Lakehouse, Warehouse, Pipelines, Notebooks, Dataflows) 4. Data flow design (batch vs streaming clarity) 5. Scalability and performance considerations 6. Governance compliance (naming, layering, metadata usage) 7. Security and access considerations (if mentioned)  Return the response in this format:  Architecture Assessment: Pass / Needs Improvement / Fail  Score: 0–100  Strengths: - ...  Issues Found: - ...  Best Practice Violations: - ...  Recommendations: - ...  Improved Architecture Suggestion: - Provide a corrected high-level design"
+      fileSearchDataSource:
+        searchFilesMode:
+          kind: SearchSpecificFiles
+          files:
+            - cr681_EnterpriseDataEngineeringAgent.file.DataEngineeringKnowledge-MedallionArchitecture.docx_P2Q
+
+      knowledgeSources:
+        kind: SearchSpecificKnowledgeSources
+
+inputType: {}
+outputType: {}

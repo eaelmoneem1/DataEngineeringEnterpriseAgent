@@ -1,0 +1,14 @@
+mcs.metadata:
+  componentName: Fabric IQ Ontology MCP - Fabric IQ MCP (Preview)
+kind: TaskDialog
+modelDisplayName: Fabric IQ MCP (Preview)
+modelDescription: Unify enterprise semantics across data, models and logic to enable context-aware AI agents
+action:
+  kind: InvokeExternalAgentTaskAction
+  connectionReference: cr681_EnterpriseDataEngineeringAgent.shared_fabriciqmcpserver.26f29344a9eb469b82480c62552ad0f5
+  connectionProperties:
+    mode: Invoker
+
+  operationDetails:
+    kind: ModelContextProtocolMetadata
+    operationId: mcp_FabricIQOntology

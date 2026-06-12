@@ -1,0 +1,33 @@
+displayName: Data Engineering Agent
+schemaName: cr681_EnterpriseDataEngineeringAgent
+accessControlPolicy: Any
+authenticationMode: Integrated
+authenticationTrigger: Always
+configuration:
+  channels:
+    - channelId: MsTeams
+
+    - channelId: Microsoft365Copilot
+
+  settings:
+    GenerativeActionsEnabled: true
+
+  isAgentConnectable: false
+  publishOnImport: true
+  gPTSettings:
+    defaultSchemaName: cr681_EnterpriseDataEngineeringAgent.gpt.default
+
+  isLightweightBot: false
+  aISettings:
+    useModelKnowledge: true
+    isFileAnalysisEnabled: true
+    isSemanticSearchEnabled: true
+    contentModeration: Low
+    optInUseLatestModels: false
+
+  recognizer:
+    kind: GenerativeAIRecognizer
+
+publishedOn: 2026-06-07T19:08:47.0000000Z
+template: default-2.1.0
+language: 1033
