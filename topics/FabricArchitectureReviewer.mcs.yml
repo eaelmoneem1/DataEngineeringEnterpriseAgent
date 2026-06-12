@@ -5,6 +5,7 @@ beginDialog:
   kind: OnRecognizedIntent
   id: main
   intent:
+    displayName:
     triggerQueries:
       - review my fabric architecture
       - fabric architecture feedback
@@ -31,7 +32,7 @@ beginDialog:
         searchFilesMode:
           kind: SearchSpecificFiles
           files:
-            - cr681_EnterpriseDataEngineeringAgent.file.DataEngineeringKnowledge-MedallionArchitecture.docx_xYe
+            - cr681_EnterpriseDataEngineeringAgent.file.DataEngineeringKnowledge-MedallionArchitecture.docx_P2Q
 
       knowledgeSources:
         kind: SearchSpecificKnowledgeSources
