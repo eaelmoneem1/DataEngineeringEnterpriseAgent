@@ -1,0 +1,22 @@
+# Environment files
+.env
+.env.*
+
+# Configuration
+appsettings.json
+appsettings.*.json
+
+# User-specific files
+*.user
+
+# Secrets
+**/.secrets/
+config/secrets.*
+
+# Certificates and keys
+*.pem
+*.pfx
+*.key
+
+# Local data
+Data Pro/
