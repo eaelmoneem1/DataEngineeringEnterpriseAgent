@@ -191,33 +191,6 @@ The agent translates these requests into the appropriate Fabric assets.
 
 # Technical Architecture
 ![Enterprise Data Engineering Agent Architecture](architecture.png)
-
-```
-                        User
-                          │
-                          ▼
-                Copilot Studio
-            (Cognitive Orchestrator)
-                          │
-        ┌─────────────────┼──────────────────┐
-        │                 │                  │
-        ▼                 ▼                  ▼
- Enterprise RAG      MCP Server         Fabric IQ
- Knowledge Base    Tool Execution    Semantic Search
-        │                 │                  │
-        └──────────────┬──┴──────────────────┘
-                       ▼
-               Microsoft Fabric
-        ┌───────────────────────────────────┐
-        │ Lakehouses                        │
-        │ Warehouses                        │
-        │ Pipelines                         │
-        │ Notebooks                         │
-        │ Semantic Models                   │
-        │ Data Factory                      │
-        └───────────────────────────────────┘
-```
-
 ---
 
 # Multi-Agent Architecture
