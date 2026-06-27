@@ -190,7 +190,7 @@ The agent translates these requests into the appropriate Fabric assets.
 ---
 
 # Technical Architecture
-![Enterprise Data Engineering Agent Architecture](architecture.jpg)
+![Enterprise Data Engineering Agent Architecture](architecture.png)
 
 ```
                         User
