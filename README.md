@@ -1,7 +1,6 @@
 # Enterprise Data Engineering Agent
 
-> This agent was developed and participated in the Microsoft Agents League 2026, showcasing enterprise data engineering automation and AI-powered capabilities.
-> Intelligent orchestration engine for Medallion architectures and managed Microsoft Fabric environments.
+> 🚀 This agent was developed and participated in the **Microsoft Agents League 2026**, showcasing enterprise data engineering automation and AI-powered capabilities.
 
 ![Platform](https://img.shields.io/badge/Platform-Microsoft%20Fabric-blue)
 ![Language](https://img.shields.io/badge/AI-Copilot%20Studio-purple)
