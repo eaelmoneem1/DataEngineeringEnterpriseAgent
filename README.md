@@ -8,7 +8,10 @@
 ![License](https://img.shields.io/badge/Status-Prototype-orange)
 
 ---
+- **Created By**: Ehab Abdelmonem
+- **E-mail:** eaelmoneem@gmail.com
 
+---
 # Overview
 
 The **Enterprise Data Engineering Agent** is an AI-powered engineering assistant designed to automate and accelerate enterprise data platform development on **Microsoft Fabric** and the **Azure Data Platform**.
